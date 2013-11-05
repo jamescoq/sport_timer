@@ -2,7 +2,12 @@
 <resources>
 
     <string name="app_name">Timer app</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="menu_simple_wokout">Simple workout</string>
+    <string name="menu_round_workout">Round workout</string>
+    <string name="menu_complex_workout">Complex workout</string>
+    
+    <string name="ws_effort_time_label">Effort time</string>
+    <string name="ws_pause_time_label">Pause time</string>
+    <string name="ws_rounds_label">Rounds</string>
 
 </resources>
