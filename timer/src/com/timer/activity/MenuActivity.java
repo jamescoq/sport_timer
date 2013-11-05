@@ -1,4 +1,4 @@
-package com.timer;
+package com.timer.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+
+import com.timer.R;
 
 public class MenuActivity extends Activity {
 
@@ -17,7 +19,6 @@ public class MenuActivity extends Activity {
 		setContentView(R.layout.menu);
 
 		btSimple = (Button) findViewById(R.id.bt_menu_simple_workout);
-
 		btSimple.setOnClickListener(new OnClickListener() {
 
 			@Override

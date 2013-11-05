@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/w_tv_stage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:text="@string/w_stage_effort"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/w_tv_pause_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/w_tv_effort_time"
+        android:layout_alignTop="@+id/w_tv_pause_time_label"
+        android:text="@string/default_time"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Switch
+        android:id="@+id/w_sw_pause_workout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/w_tv_pause_time"
+        android:layout_centerVertical="true"
+        android:text="@string/w_pause" />
+
+    <Button
+        android:id="@+id/w_bt_stop"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/w_sw_pause_workout"
+        android:layout_marginTop="30dp"
+        android:text="@string/bt_reset" />
+
+    <TextView
+        android:id="@+id/w_tv_effort_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/w_tv_effort_time_label"
+        android:layout_marginLeft="66dp"
+        android:layout_toRightOf="@+id/w_tv_pause_time_label"
+        android:text="@string/default_time"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/w_tv_effort_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/w_bt_stop"
+        android:layout_below="@+id/w_tv_round_label"
+        android:layout_marginTop="30dp"
+        android:text="@string/ws_effort_time_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/w_tv_pause_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/w_tv_effort_time_label"
+        android:layout_below="@+id/w_tv_effort_time"
+        android:layout_marginTop="30dp"
+        android:text="@string/ws_pause_time_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/w_tv_round_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/w_tv_effort_time_label"
+        android:layout_below="@+id/w_tv_stage"
+        android:layout_marginTop="18dp"
+        android:text="@string/ws_rounds_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/w_tv_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/w_tv_effort_time"
+        android:layout_alignTop="@+id/w_tv_round_label"
+        android:text="@string/default_rounds"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/w_bt_back"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/w_bt_stop"
+        android:layout_alignBottom="@+id/w_bt_stop"
+        android:layout_toRightOf="@+id/w_bt_stop"
+        android:text="@string/bt_back" />
+    
+ </RelativeLayout>   
+    

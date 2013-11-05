@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--  Application -->
     <string name="app_name">Timer app</string>
+    <string name="bt_back">Back</string>
+    <string name="bt_reset">Restart</string>
+    
+    <!-- Menu layout -->	
     <string name="menu_simple_wokout">Simple workout</string>
     <string name="menu_round_workout">Round workout</string>
     <string name="menu_complex_workout">Complex workout</string>
     
+    <!-- Workout settings layout -->
     <string name="ws_effort_time_label">Effort time</string>
     <string name="ws_pause_time_label">Pause time</string>
     <string name="ws_rounds_label">Rounds</string>
+    <string name="ws_start_workout">Start workout</string>
+    
+    <!-- Workout layout -->
+    <string name="w_stage_effort">Go go go !</string>
+    <string name="w_stage_pause">Relax</string>
+    <string name="w_pause">Pause</string>
+    <string name="w_continue">Continue</string>
+ 
+    <!--  Default layout -->
+    <string name="default_time">00:00:00</string>
+    <string name="default_rounds">0</string>
 
 </resources>
