@@ -8,6 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 import com.timer.R;
+import com.timer.util.TimeUtils;
 
 public class SimpleWorkoutSettingsActivity extends Activity {
 
@@ -25,9 +26,11 @@ public class SimpleWorkoutSettingsActivity extends Activity {
 						SimpleWorkoutSettingsActivity.this,
 						WorkoutActivity.class);
 
-				startCounterServiceIntent.putExtra("effortTime", 10);
-				startCounterServiceIntent.putExtra("pauseTime", 10);
-				startCounterServiceIntent.putExtra("rounds", 1);
+				startCounterServiceIntent.putExtra("effortTime",
+						TimeUtils.getSeconds(0, 0, 10));
+				startCounterServiceIntent.putExtra("pauseTime",
+						TimeUtils.getSeconds(0, 0, 5));
+				startCounterServiceIntent.putExtra("rounds", 3);
 
 				startActivity(startCounterServiceIntent);
 			}

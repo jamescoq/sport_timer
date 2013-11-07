@@ -27,11 +27,12 @@ public class CounterService extends Service {
 				final Intent countInternt = new Intent("com.timer.COUNTER");
 				countInternt.putExtra("COUNT", secondsCount);
 				sendBroadcast(countInternt);
-				secondsCount--;
 
 				if (secondsCount < 0) {
 					stopSelf();
 				}
+
+				secondsCount--;
 			}
 		}, 0, 1000);
 
@@ -50,4 +51,5 @@ public class CounterService extends Service {
 			timer.cancel();
 		}
 	}
+
 }
